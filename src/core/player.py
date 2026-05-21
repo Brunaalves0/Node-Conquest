@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, name, start_node, color=(255, 50, 50), is_ai=False):
+    def __init__(self, name, start_node=None, color=(255, 50, 50), is_ai=False):
         self.name = name
 
         self.current_node = start_node

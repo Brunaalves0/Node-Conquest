@@ -81,7 +81,7 @@ class Renderer:
             pygame.draw.rect(self.screen, bg_color, card_rect, border_radius=10)
             name_text = self.font.render(actor.name, True, (255, 255, 255))
             self.screen.blit(name_text, (card_rect.x + 30, card_rect.y + 8))
-            points_text = self.small_font.render(f"Points: {actor.points}", True, (220, 220, 220))
+            points_text = self.small_font.render(f"Points: {actor.points} | Moves: {actor.moves_left}/{actor.max_moves}", True, (220, 220, 220))
             self.screen.blit(points_text, (card_rect.x + 30, card_rect.y + 36))
 
     def draw_hex(self, node):
@@ -93,9 +93,25 @@ class Renderer:
             self.screen.blit(text, text.get_rect(center=(cx, cy)))
 
     def draw_preview_path(self, path, actor):
+        sim_moves = actor.moves_left
+        sim_paid = actor.has_used_paid_move
         for node in path:
+            can_reach = False
+            if node.owner == actor:
+                if not sim_paid:
+                    can_reach = True
+            else:
+                if sim_moves >= node.move_cost:
+                    sim_moves -= node.move_cost
+                    sim_paid = True
+                    can_reach = True
+                else:
+                    can_reach = False
+                    sim_paid = True
+            
+            color = (255, 255, 0) if can_reach else (255, 0, 0)
             points, _, _ = self._get_hex_geometry(node)
-            pygame.draw.polygon(self.screen, (255, 255, 0), points, 4)
+            pygame.draw.polygon(self.screen, color, points, 4)
 
     def get_node_at_pos(self, graph, pos):
         mx, my = pos

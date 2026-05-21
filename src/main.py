@@ -54,6 +54,45 @@ def main():
         current_idx = 0
         state = "GAME"
 
+    def load_game_action():
+        nonlocal game_map, actors, current_idx, pathfinder, territory_manager, state
+        new_graph, actors_data, c_idx, nodes_data = data_manager.load_game("savegame.json")
+        if new_graph is None:
+            return
+        
+        new_actors = []
+        actor_lookup = {}
+        for adata in actors_data:
+            actor = Player(adata["name"], None, tuple(adata["color"]), adata["is_ai"])
+            actor.points = adata["points"]
+            actor.moves_left = adata["moves_left"]
+            actor.has_used_paid_move = adata["has_used_paid_move"]
+            new_actors.append(actor)
+            actor_lookup[actor.name] = actor
+            
+        for node_data in nodes_data:
+            x, y = node_data["x"], node_data["y"]
+            weight = node_data["weight"]
+            owner_name = node_data.get("owner_name")
+            node = new_graph.get_node(x, y)
+            if node:
+                node.set_weight(weight)
+                if owner_name in actor_lookup:
+                    node.owner = actor_lookup[owner_name]
+                    node.color = actor_lookup[owner_name].color
+                    node.move_cost = 0
+
+        for adata in actors_data:
+            actor = actor_lookup[adata["name"]]
+            actor.current_node = new_graph.get_node(adata["node_x"], adata["node_y"])
+
+        game_map = new_graph
+        actors = new_actors
+        current_idx = c_idx
+        pathfinder = AStar(game_map)
+        territory_manager = TerritoryManager(game_map, actors)
+        state = "GAME"
+
     running = True
     while running:
         mouse_pos = pygame.mouse.get_pos()
@@ -67,13 +106,19 @@ def main():
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     if renderer.new_game_rect.collidepoint(event.pos):
                         start_new_game()
+                    elif renderer.load_game_rect.collidepoint(event.pos):
+                        load_game_action()
                     elif renderer.info_rect.collidepoint(event.pos):
                         state = "INFO"
             
             elif state == "GAME":
                 current_actor = actors[current_idx]
-                if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                    state = "MENU"
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        state = "MENU"
+                    elif event.key == pygame.K_s:
+                        data_manager.save_game("savegame.json", game_map, actors, current_idx)
+                
                 if not current_actor.is_ai:
                     if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                         if renderer.end_turn_rect.collidepoint(event.pos):
