@@ -15,24 +15,24 @@
             "x": 1,
             "y": 0,
             "weight": 1,
-            "owner_name": "Jogador"
+            "owner_name": null
         },
         {
             "x": 2,
             "y": 0,
-            "weight": 3,
-            "owner_name": "Jogador"
+            "weight": 1,
+            "owner_name": null
         },
         {
             "x": 3,
             "y": 0,
             "weight": 1,
-            "owner_name": "Jogador"
+            "owner_name": null
         },
         {
             "x": 4,
             "y": 0,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -44,7 +44,7 @@
         {
             "x": 6,
             "y": 0,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -56,13 +56,13 @@
         {
             "x": 8,
             "y": 0,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 9,
             "y": 0,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -74,13 +74,13 @@
         {
             "x": 11,
             "y": 0,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 12,
             "y": 0,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -99,12 +99,12 @@
             "x": 0,
             "y": 1,
             "weight": 1,
-            "owner_name": null
+            "owner_name": "Jogador"
         },
         {
             "x": 1,
             "y": 1,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -116,13 +116,13 @@
         {
             "x": 3,
             "y": 1,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 1,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -140,19 +140,19 @@
         {
             "x": 7,
             "y": 1,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 8,
             "y": 1,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 9,
             "y": 1,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -170,7 +170,7 @@
         {
             "x": 12,
             "y": 1,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -189,13 +189,13 @@
             "x": 0,
             "y": 2,
             "weight": 1,
-            "owner_name": null
+            "owner_name": "Jogador"
         },
         {
             "x": 1,
             "y": 2,
             "weight": 1,
-            "owner_name": null
+            "owner_name": "Jogador"
         },
         {
             "x": 2,
@@ -206,7 +206,7 @@
         {
             "x": 3,
             "y": 2,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -218,7 +218,7 @@
         {
             "x": 5,
             "y": 2,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -230,7 +230,7 @@
         {
             "x": 7,
             "y": 2,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -242,19 +242,19 @@
         {
             "x": 9,
             "y": 2,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 10,
             "y": 2,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 11,
             "y": 2,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -272,19 +272,19 @@
         {
             "x": 14,
             "y": 2,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 0,
             "y": 3,
-            "weight": 3,
-            "owner_name": null
+            "weight": 2,
+            "owner_name": "Jogador"
         },
         {
             "x": 1,
             "y": 3,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -296,13 +296,13 @@
         {
             "x": 3,
             "y": 3,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 3,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -314,19 +314,19 @@
         {
             "x": 6,
             "y": 3,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 7,
             "y": 3,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 8,
             "y": 3,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -338,19 +338,19 @@
         {
             "x": 10,
             "y": 3,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 11,
             "y": 3,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 12,
             "y": 3,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -362,25 +362,25 @@
         {
             "x": 14,
             "y": 3,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 0,
             "y": 4,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 1,
             "y": 4,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 2,
             "y": 4,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -410,7 +410,7 @@
         {
             "x": 7,
             "y": 4,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -422,49 +422,49 @@
         {
             "x": 9,
             "y": 4,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 10,
             "y": 4,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 11,
             "y": 4,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 12,
             "y": 4,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 13,
             "y": 4,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 14,
             "y": 4,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 0,
             "y": 5,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 1,
             "y": 5,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -476,13 +476,13 @@
         {
             "x": 3,
             "y": 5,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 5,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -530,25 +530,25 @@
         {
             "x": 12,
             "y": 5,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 13,
             "y": 5,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 14,
             "y": 5,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 0,
             "y": 6,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -560,7 +560,7 @@
         {
             "x": 2,
             "y": 6,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -572,19 +572,19 @@
         {
             "x": 4,
             "y": 6,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 5,
             "y": 6,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 6,
             "y": 6,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -596,19 +596,19 @@
         {
             "x": 8,
             "y": 6,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 9,
             "y": 6,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 10,
             "y": 6,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -620,7 +620,7 @@
         {
             "x": 12,
             "y": 6,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -632,49 +632,49 @@
         {
             "x": 14,
             "y": 6,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 0,
             "y": 7,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 1,
             "y": 7,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 2,
             "y": 7,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 3,
             "y": 7,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 7,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 5,
             "y": 7,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 6,
             "y": 7,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -704,7 +704,7 @@
         {
             "x": 11,
             "y": 7,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -722,7 +722,7 @@
         {
             "x": 14,
             "y": 7,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -734,31 +734,31 @@
         {
             "x": 1,
             "y": 8,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 2,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 3,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 8,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 5,
             "y": 8,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -770,37 +770,37 @@
         {
             "x": 7,
             "y": 8,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 8,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 9,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 10,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 11,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 12,
             "y": 8,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -812,7 +812,7 @@
         {
             "x": 14,
             "y": 8,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -824,25 +824,25 @@
         {
             "x": 1,
             "y": 9,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 2,
             "y": 9,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 3,
             "y": 9,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 9,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -854,13 +854,13 @@
         {
             "x": 6,
             "y": 9,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 7,
             "y": 9,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -872,19 +872,19 @@
         {
             "x": 9,
             "y": 9,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 10,
             "y": 9,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 11,
             "y": 9,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -896,13 +896,13 @@
         {
             "x": 13,
             "y": 9,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 14,
             "y": 9,
-            "weight": 3,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -914,25 +914,25 @@
         {
             "x": 1,
             "y": 10,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 2,
             "y": 10,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
             "x": 3,
             "y": 10,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
             "x": 4,
             "y": 10,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -944,7 +944,7 @@
         {
             "x": 6,
             "y": 10,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -968,7 +968,7 @@
         {
             "x": 10,
             "y": 10,
-            "weight": 1,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -980,13 +980,13 @@
         {
             "x": 12,
             "y": 10,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 13,
             "y": 10,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -1016,7 +1016,7 @@
         {
             "x": 3,
             "y": 11,
-            "weight": 1,
+            "weight": 2,
             "owner_name": null
         },
         {
@@ -1028,7 +1028,7 @@
         {
             "x": 5,
             "y": 11,
-            "weight": 2,
+            "weight": 1,
             "owner_name": null
         },
         {
@@ -1052,13 +1052,13 @@
         {
             "x": 9,
             "y": 11,
-            "weight": 3,
+            "weight": 2,
             "owner_name": null
         },
         {
             "x": 10,
             "y": 11,
-            "weight": 2,
+            "weight": 3,
             "owner_name": null
         },
         {
@@ -1095,8 +1095,8 @@
                 255
             ],
             "is_ai": false,
-            "node_x": 3,
-            "node_y": 0,
+            "node_x": 0,
+            "node_y": 3,
             "points": 5,
             "moves_left": 0,
             "has_used_paid_move": true

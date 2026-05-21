@@ -2,19 +2,31 @@ import pygame
 import math
 
 class Renderer:
-    def __init__(self, screen, camera_offset=(0, 0)):
+    def __init__(self, screen):
         self.screen = screen
-        self.camera_x = camera_offset[0]
-        self.camera_y = camera_offset[1]
+        self.camera_x = 0
+        self.camera_y = 0
+        self.zoom = 1.0
         self.font = pygame.font.SysFont("arial", 20)
         self.ui_font = pygame.font.SysFont("arial", 20)
         self.small_font = pygame.font.SysFont("arial", 16)
         self.title_font = pygame.font.SysFont("arial", 72, bold=True)
         self.menu_font = pygame.font.SysFont("arial", 32)
+        
+        self.hex_fonts = {}
+        
         self.end_turn_rect = pygame.Rect(20, 20, 160, 50)
+        
+        # Menu rects
         self.new_game_rect = pygame.Rect(0, 0, 300, 60)
         self.load_game_rect = pygame.Rect(0, 0, 300, 60)
         self.info_rect = pygame.Rect(0, 0, 300, 60)
+        
+        # Size select rects
+        self.btn_small = pygame.Rect(0, 0, 300, 60)
+        self.btn_med = pygame.Rect(0, 0, 300, 60)
+        self.btn_large = pygame.Rect(0, 0, 300, 60)
+        self.btn_back = pygame.Rect(0, 0, 300, 60)
 
     def clear(self):
         self.screen.fill((30, 30, 40))
@@ -30,6 +42,24 @@ class Renderer:
             (self.load_game_rect, "Carregar Jogo", 30),
             (self.info_rect, "Tutorial", 110)
         ]
+        self._draw_buttons(buttons, screen_center)
+
+    def render_size_select(self):
+        self.clear()
+        screen_center = self.screen.get_rect().center
+        title_surf = self.title_font.render("Escolha o Tamanho", True, (255, 230, 120))
+        title_rect = title_surf.get_rect(center=(screen_center[0], screen_center[1] - 200))
+        self.screen.blit(title_surf, title_rect)
+        
+        buttons = [
+            (self.btn_small, "Pequeno (10x10)", -50),
+            (self.btn_med, "Médio (15x15)", 30),
+            (self.btn_large, "Grande (25x25)", 110),
+            (self.btn_back, "Voltar", 190)
+        ]
+        self._draw_buttons(buttons, screen_center)
+
+    def _draw_buttons(self, buttons, screen_center):
         for rect, text, offset_y in buttons:
             rect.center = (screen_center[0], screen_center[1] + offset_y)
             mouse_pos = pygame.mouse.get_pos()
@@ -42,11 +72,16 @@ class Renderer:
 
     def _get_hex_geometry(self, node):
         x, y = node.get_screen_coords()
-        cx = x + node.width / 2 + self.camera_x
-        cy = y + node.height / 2 + self.camera_y
-        radius = node.height / 2
+        scaled_w = node.width * self.zoom
+        scaled_h = node.height * self.zoom
+
+        cx = x * self.zoom + scaled_w / 2 + self.camera_x
+        cy = y * self.zoom + scaled_h / 2 + self.camera_y
+        
+        radius = scaled_h / 2
         w_half = radius * (math.sqrt(3) / 2)
         h_half = radius
+        
         points = [
             (cx, cy - h_half),
             (cx + w_half, cy - h_half * 0.5),
@@ -66,8 +101,8 @@ class Renderer:
     def render_actors(self, actors):
         for actor in actors:
             _, cx, cy = self._get_hex_geometry(actor.current_node)
-            pygame.draw.circle(self.screen, (255, 255, 255), (int(cx), int(cy)), 16)
-            pygame.draw.circle(self.screen, actor.color, (int(cx), int(cy)), 12)
+            pygame.draw.circle(self.screen, (255, 255, 255), (int(cx), int(cy)), int(16 * self.zoom))
+            pygame.draw.circle(self.screen, actor.color, (int(cx), int(cy)), int(12 * self.zoom))
 
     def render_ui(self, actors, current_actor):
         pygame.draw.rect(self.screen, (70, 70, 90), self.end_turn_rect, border_radius=8)
@@ -87,10 +122,16 @@ class Renderer:
     def draw_hex(self, node):
         points, cx, cy = self._get_hex_geometry(node)
         pygame.draw.polygon(self.screen, node.color, points)
-        pygame.draw.polygon(self.screen, (40, 40, 40), points, 2)
+        pygame.draw.polygon(self.screen, (40, 40, 40), points, int(max(1, 2 * self.zoom)))
+        
         if node.move_cost > 0:
-            text = self.font.render(str(node.move_cost), True, (0, 0, 0))
-            self.screen.blit(text, text.get_rect(center=(cx, cy)))
+            font_size = int(20 * self.zoom)
+            if font_size > 8:
+                if font_size not in self.hex_fonts:
+                    self.hex_fonts[font_size] = pygame.font.SysFont("arial", font_size)
+                
+                text = self.hex_fonts[font_size].render(str(node.move_cost), True, (0, 0, 0))
+                self.screen.blit(text, text.get_rect(center=(cx, cy)))
 
     def draw_preview_path(self, path, actor):
         sim_moves = actor.moves_left
@@ -111,7 +152,7 @@ class Renderer:
             
             color = (255, 255, 0) if can_reach else (255, 0, 0)
             points, _, _ = self._get_hex_geometry(node)
-            pygame.draw.polygon(self.screen, color, points, 4)
+            pygame.draw.polygon(self.screen, color, points, int(max(1, 4 * self.zoom)))
 
     def get_node_at_pos(self, graph, pos):
         mx, my = pos
@@ -123,7 +164,8 @@ class Renderer:
             if dist < closest_dist:
                 closest_dist = dist
                 closest_node = node
-        if closest_node and closest_dist < (closest_node.height / 2)**2:
+                
+        if closest_node and closest_dist < ((closest_node.height * self.zoom) / 2)**2:
             return closest_node
         return None
 
