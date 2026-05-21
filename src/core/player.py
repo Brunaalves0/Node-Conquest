@@ -13,8 +13,8 @@ class Player:
         self.move_timer = 0
         self.base_move_delay = 8
 
-        self.max_moves = 3
-        self.moves_left = 3
+        self.max_moves = 5
+        self.moves_left = 5
 
         self.points = 0
 

@@ -1,0 +1,1147 @@
+{
+    "cols": 15,
+    "rows": 12,
+    "tile_width": 64,
+    "tile_height": 64,
+    "current_idx": 0,
+    "nodes": [
+        {
+            "x": 0,
+            "y": 0,
+            "weight": 1,
+            "owner_name": "Jogador"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "weight": 1,
+            "owner_name": "Jogador"
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "weight": 3,
+            "owner_name": "Jogador"
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "weight": 1,
+            "owner_name": "Jogador"
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 0,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 0,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 0,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 0,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "weight": 1,
+            "owner_name": "AI 1"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 1,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 1,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 1,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 1,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 1,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 1,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 1,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 2,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 2,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 2,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 2,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 2,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 2,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 2,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 3,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 3,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 3,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 3,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 3,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 4,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 4,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 4,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 5,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 5,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 6,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 6,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 6,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 6,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 6,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 7,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 7,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 7,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 7,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 7,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 7,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 7,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 8,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 8,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 8,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 8,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 9,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 9,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 9,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 9,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 9,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 10,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 10,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 0,
+            "y": 11,
+            "weight": 1,
+            "owner_name": "AI 2"
+        },
+        {
+            "x": 1,
+            "y": 11,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 2,
+            "y": 11,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 3,
+            "y": 11,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 4,
+            "y": 11,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 6,
+            "y": 11,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 7,
+            "y": 11,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 9,
+            "y": 11,
+            "weight": 3,
+            "owner_name": null
+        },
+        {
+            "x": 10,
+            "y": 11,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 11,
+            "y": 11,
+            "weight": 2,
+            "owner_name": null
+        },
+        {
+            "x": 12,
+            "y": 11,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 13,
+            "y": 11,
+            "weight": 1,
+            "owner_name": null
+        },
+        {
+            "x": 14,
+            "y": 11,
+            "weight": 1,
+            "owner_name": "AI 3"
+        }
+    ],
+    "actors": [
+        {
+            "name": "Jogador",
+            "color": [
+                100,
+                200,
+                255
+            ],
+            "is_ai": false,
+            "node_x": 3,
+            "node_y": 0,
+            "points": 5,
+            "moves_left": 0,
+            "has_used_paid_move": true
+        },
+        {
+            "name": "AI 1",
+            "color": [
+                255,
+                100,
+                100
+            ],
+            "is_ai": true,
+            "node_x": 14,
+            "node_y": 0,
+            "points": 0,
+            "moves_left": 5,
+            "has_used_paid_move": false
+        },
+        {
+            "name": "AI 2",
+            "color": [
+                100,
+                255,
+                100
+            ],
+            "is_ai": true,
+            "node_x": 0,
+            "node_y": 11,
+            "points": 0,
+            "moves_left": 5,
+            "has_used_paid_move": false
+        },
+        {
+            "name": "AI 3",
+            "color": [
+                200,
+                100,
+                255
+            ],
+            "is_ai": true,
+            "node_x": 14,
+            "node_y": 11,
+            "points": 0,
+            "moves_left": 5,
+            "has_used_paid_move": false
+        }
+    ]
+}

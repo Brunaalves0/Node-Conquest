@@ -126,3 +126,25 @@ class Renderer:
         if closest_node and closest_dist < (closest_node.height / 2)**2:
             return closest_node
         return None
+
+    def render_game_over(self, actors):
+        self.clear()
+        overlay = pygame.Surface((1280, 720), pygame.SRCALPHA)
+        overlay.fill((30, 30, 30, 230))
+        self.screen.blit(overlay, (0, 0))
+        
+        title_surf = self.title_font.render("Fim de Jogo!", True, (255, 215, 0))
+        title_rect = title_surf.get_rect(center=(640, 100))
+        self.screen.blit(title_surf, title_rect)
+        
+        sorted_actors = sorted(actors, key=lambda a: a.points, reverse=True)
+        for i, actor in enumerate(sorted_actors):
+            color = (255, 215, 0) if i == 0 else (255, 255, 255)
+            text = f"{i+1}º: {actor.name} - {actor.points} pontos"
+            txt_surf = self.menu_font.render(text, True, color)
+            rect = txt_surf.get_rect(center=(640, 250 + (i * 60)))
+            self.screen.blit(txt_surf, rect)
+            
+        msg_surf = self.ui_font.render("Clique em qualquer lugar para voltar ao menu", True, (150, 150, 150))
+        msg_rect = msg_surf.get_rect(center=(640, 600))
+        self.screen.blit(msg_surf, msg_rect)

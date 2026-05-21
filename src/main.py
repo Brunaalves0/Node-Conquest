@@ -128,7 +128,11 @@ def main():
                             if target and not current_actor.path:
                                 path = pathfinder.get_path(current_actor.current_node, target, current_actor)
                                 if path: current_actor.set_path(path)
-            
+
+            elif state == "GAME_OVER":
+                if event.type == pygame.MOUSEBUTTONDOWN or event.type == pygame.KEYDOWN:
+                    state = "MENU"
+
             elif state == "INFO":
                 if event.type == pygame.MOUSEBUTTONDOWN or event.type == pygame.KEYDOWN:
                     state = "MENU"
@@ -136,23 +140,28 @@ def main():
         if state == "MENU":
             renderer.render_main_menu()
         elif state == "GAME":
-            current_actor = actors[current_idx]
-            if not current_actor.is_ai and not current_actor.path:
-                hover = renderer.get_node_at_pos(game_map, mouse_pos)
-                preview_path = pathfinder.get_path(current_actor.current_node, hover, current_actor) if hover else []
-            
-            is_idle = current_actor.update()
-            if current_actor.is_ai and is_idle:
-                if current_actor.moves_left > 0:
-                    if not current_actor.ai_think(game_map, pathfinder):
+            if all(node.owner is not None for node in game_map.nodes.values()):
+                state = "GAME_OVER"
+            else:
+                current_actor = actors[current_idx]
+                if not current_actor.is_ai and not current_actor.path:
+                    hover = renderer.get_node_at_pos(game_map, mouse_pos)
+                    preview_path = pathfinder.get_path(current_actor.current_node, hover, current_actor) if hover else []
+                
+                is_idle = current_actor.update()
+                if current_actor.is_ai and is_idle:
+                    if current_actor.moves_left > 0:
+                        if not current_actor.ai_think(game_map, pathfinder):
+                            current_idx = next_turn(current_idx)
+                    else:
                         current_idx = next_turn(current_idx)
-                else:
-                    current_idx = next_turn(current_idx)
 
-            renderer.clear()
-            renderer.render_graph(game_map, preview_path, current_actor)
-            renderer.render_actors(actors)
-            renderer.render_ui(actors, current_actor)
+                renderer.clear()
+                renderer.render_graph(game_map, preview_path, current_actor)
+                renderer.render_actors(actors)
+                renderer.render_ui(actors, current_actor)
+        elif state == "GAME_OVER":
+            renderer.render_game_over(actors)
         elif state == "INFO":
             renderer.clear()
             overlay = pygame.Surface((1280, 720), pygame.SRCALPHA)
@@ -168,6 +177,7 @@ def main():
                 ("   mas somente se você ainda não tiver se movimentado", (255, 255, 255), 325),
                 ("Se você isolar uma área que não foi capturada por outros jogadores,", (255, 255, 255), 375),
                 ("      todo aquele território se torna seu automaticamente", (255, 255, 255), 400),
+                ("Aperte 'S' durante o jogo para salvar seu progresso", (100, 200, 255), 475),
                 ("Clique em qualquer lugar para voltar", (150, 150, 150), 600)
             ]
             
