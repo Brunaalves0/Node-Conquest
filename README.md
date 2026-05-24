@@ -48,6 +48,8 @@ O jogo detecta automaticamente quando todos os nós foram dominados, declarando 
 
 - ESC: Retorna ao menu principal.
 
+- S: Salvar o jogo atual.
+
 ---
 
 ## 🛠️ Estrutura do Projeto
