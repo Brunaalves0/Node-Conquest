@@ -24,20 +24,20 @@
 | Algoritmo A* (A-Estrela) | |
 |-------|----------|
 | Categoria | Busca |
-| Complexidade de tempo | O(b^d) |
+| Complexidade de tempo | O((V + E) log V) |
 | Complexidade de espaço | O(V) |
 | Problema que resolve | Busca de menor caminho em grafos ponderados |
 
 **Por que este algoritmo foi escolhido?**
 
-O  algoritmo A* permite que os agentes em jogos de estratégia encontrem rotas de forma mais natural e eficiente. Ele é ideal pois utiliza uma função heurística para guiar a busca, reduzindo o tempo de processamento comparado a outros algoritmos de busca, o que evita quedas de FPS em simulações com múltiplos agentes.
+O  algoritmo A* permite que os agentes em jogos de estratégia encontrem rotas de forma mais natural e eficiente. Ele é ideal pois utiliza a distância hexagonal em coordenadas cúbicas como função heurística para guiar a busca, reduzindo o tempo de processamento comparado a outros algoritmos de busca, o que evita quedas de FPS em simulações com múltiplos agentes.
 
 **Alternativa descartada e motivo:**
 
 | Algoritmo alternativo | Motivo da exclusão |
 |----------------------|-------------------|
 | Busca em largura (BFS) | Ignora os pesos das arestas/vértices |
-| Dijkstra | Não é ideal para grafos ponderados |
+| Dijkstra | Explora nós sem direção ao objetivo, custoso em múltiplos agentes |
 
 **Limitações no contexto do problema:**
 
@@ -70,20 +70,24 @@ O desempenho do A* é altamente dependente da escolha de função heurística. E
 node-conquest-terrarium/
 ├── docs/
 │   ├── E1_NodeConquest_Visao.md
-│   └── E2_NodeConquest_Design.md
+│   ├── E2_NodeConquest_Design.md
+│   ├── E3_NodeConquest_Visao.md
 ├── src/
 │   ├── core/
+|   │   ├── data_manager.py   # Leitura/Escrita de JSON
 │   │   ├── graph.py          # Representação por matriz 2D
-│   │   └── node.py           # Vértices
+│   │   ├── node.py           # Vértices
+│   │   ├── player.py         # Jogador e IAs
+│   │   └── territory.py      # Algoritmo de captura automática de regiões
 │   ├── algorithms/
 │   │   └── a_star.py         # Implementação do algoritmo A* 
 │   ├── ui/
 │   │   └── renderer.py       # Renderização Pygame 
-│   ├── io/
-│   │   └── data_manager.py   # Leitura/Escrita de JSON
 │   └── main.py
 ├── data/
 │   └── maps/                 # Arquivos de mapas
+├── LICENSE                   
+├── README.md                 
 └── requirements.txt          # Dependência: Pygame
 ```
 
@@ -95,12 +99,19 @@ JSON. O arquivo descreve a dimensão da grade e uma lista de objetos representan
 
 ```json
 {
-  "grid_width": 20,
-  "grid_height": 20,
-  "cells": [
-    { "q": 0, "r": 0, "type": "plain", "weight": 1 },
-    { "q": 0, "r": 1, "type": "forest", "weight": 2 }
-  ]
+    "cols": 15,
+    "rows": 15,
+    "tile_width": 64,
+    "tile_height": 64,
+    "current_idx": 0,
+    "nodes": [
+        {
+            "x": 0,
+            "y": 0,
+            "weight": 1,
+            "owner_name": "Jogador"
+        }
+    ]
 }
 ```
 
@@ -123,7 +134,7 @@ JSON. O arquivo descreve a dimensão da grade e uma lista de objetos representan
 | 1 | Renderização hexagonal | Alta | Dado um tamanho de grade, quando o sistema inicia, então deve exibir hexágonos conectados bidimensionalmente |
 | 2 | Cálculo com algoritmo A* | Alta | Dado um ponto de origem e destino, quando o algoritmo é executado, então deve retornar a rota de menor custo |
 | 3 | Sistema de Pesos | Alta | Dado um caminho que atravessa floresta/colina (peso 2), quando calculado o total, então o custo deve ser superior a uma rota equivalente em planície |
-| 4 | Editor de terrenos | Média | Dado um input em uma célula, quando o usuário altera o tipo, então o peso do vértice deve ser atualizado no grafo |
+4 | Persistência de estado | Alta | Dado um estado de jogo, quando o usuário solicitar, o sistema deve salvar/carregar os pesos dos vértices e posições em um arquivo JSON |
 | 5 | Visualização de custo | Baixo | Dado um caminho finalizado, quando renderizado, então o sistema deve exibir o valor numérico do custo total na UI |
 
 ### 5.2 Out-of-Scope — O que NÃO será feito

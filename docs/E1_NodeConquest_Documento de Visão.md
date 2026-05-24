@@ -33,8 +33,8 @@ O sistema deve simular a movimentação de agentes em um mapa hexagonal 2D, util
 
 ## 3. Objetivos Específicos
 
-- [Modelar a grade hexagonal como um grafo ponderado, mapeando diferentes biomas (floresta, pântano, estrada) com pesos específicos nas arestas.]
-- [Implementar uma ferramenta de edição de mapa, permitindo ao usuário modificar dinamicamente a estrutura do grafo através da inserção de obstáculos e alteração dos tipos de terreno/pesos.]
+- [Modelar a grade hexagonal como um grafo ponderado, onde cada célula possui um peso fixo de 1 a 3 que representa o custo de movimento.]
+- [Implementar funcionalidades de persistência de dados, permitindo salvar e carregar o estado atual do mapa e a posição das unidades.]
 - [Desenvolver o algoritmo A* para coordenadas hexagonais, permitindo a busca de caminho entre pontos selecionado pelo usuário e as IAs.]
 - [Projetar uma interface de visualização de dados, que apresente o caminho calculado e o custo total acumulado da rota, permitindo a comparação visual entre diferentes caminhos no grafo.]
 
